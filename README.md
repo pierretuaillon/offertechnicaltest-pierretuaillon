@@ -40,3 +40,8 @@ localhost:8080/h2-console/
 | JDBC URL      | jdbc:h2:mem:technicaltestdb |
 | User Name     | sa                          |
 | Password      |                             | 
+
+
+## Postman collection
+All requests are stored in PostMan request. You can import in postman.
+Else my workspace is available here :https://www.postman.com/pierretuaillon/workspace/my-workspace/overview
