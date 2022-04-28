@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "78ebe3f7-9e0c-a30a-3250-ae546f183140",
+		"name": "PUT",
+		"description": "Toutes les méthodes PUT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"French\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"2"
+					]
+				},
+				"description": "Put d'un book"
+			},
+			"response": []
+		}
+	]
+}

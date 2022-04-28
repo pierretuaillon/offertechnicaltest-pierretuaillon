@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "d1844ad3-7f83-cd37-d91a-20d12d583d8f",
+		"name": "ERROR_PUT_USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userName empty",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"\", \r\n    \"contryOfResidence\": \"French\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"-1"
+					]
+				},
+				"description": "Manque le paramétre library.id"
+			},
+			"response": []
+		},
+		{
+			"name": "contryOfResidence empty",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"-1"
+					]
+				},
+				"description": "il manque le paramétre book.nom"
+			},
+			"response": []
+		},
+		{
+			"name": "birthdate empty Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"French\",\r\n    \"birthdate\": \"\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"-1"
+					]
+				},
+				"description": "Il manque le paramétre book.auteur"
+			},
+			"response": []
+		}
+	]
+}

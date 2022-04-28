@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c6d02981-ce80-085e-7320-1e6e225e82e0",
+		"name": "POST",
+		"description": "Liste de toutes les fonction utilisant un POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"French\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "Ajout d'un nouveau livre dans la library 1"
+			},
+			"response": []
+		}
+	]
+}

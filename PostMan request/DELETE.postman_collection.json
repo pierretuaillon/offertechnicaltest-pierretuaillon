@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "f4b0677b-87b3-eeac-f145-edb598063639",
+		"name": "DELETE",
+		"description": "Toutes les méthodes de suppression",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8080/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"1"
+					]
+				},
+				"description": "Suppression du livre avec l'id 2"
+			},
+			"response": []
+		}
+	]
+}

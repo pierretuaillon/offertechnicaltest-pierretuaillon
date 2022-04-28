@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "afc29573-5663-df7e-ebd5-6affc22d4319",
+		"name": "ERROR_POST_USER",
+		"description": "Toutes les erreurs gérées par la méthode post de book\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userName empty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"\", \r\n    \"contryOfResidence\": \"French\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "Manque le paramétre library.id"
+			},
+			"response": []
+		},
+		{
+			"name": "contryOfResidence empty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "il manque le paramétre book.nom"
+			},
+			"response": []
+		},
+		{
+			"name": "birthdate empty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"French\",\r\n    \"birthdate\": \"\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "Il manque le paramétre book.auteur"
+			},
+			"response": []
+		},
+		{
+			"name": "contryOfResidence not French",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Jellus\", \r\n    \"contryOfResidence\": \"English\",\r\n    \"birthdate\": \"2017-12-27\",\r\n    \"phoneNumber\": \"0619797031\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				},
+				"description": "il manque le paramétre book.ISBN"
+			},
+			"response": []
+		}
+	]
+}
