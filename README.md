@@ -34,8 +34,9 @@ H2 consol is enable
 
 localhost:8080/h2-console/
 
-| ------------- | ------------- |
-| Driver Class | org.h2.Driver |
-| JDBC URL | jdbc:h2:mem:technicaltestdb |
-| User Name | sa |
-| Password | | 
+| Data          | value               |
+| ------------- | -------------               |
+| Driver Class  | org.h2.Driver               |
+| JDBC URL      | jdbc:h2:mem:technicaltestdb |
+| User Name     | sa                          |
+| Password      |                             | 
