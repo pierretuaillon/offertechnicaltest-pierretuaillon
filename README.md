@@ -18,7 +18,7 @@ mvn spring-boot:run
 
 ## How to use the API
 When the application is lunch 2 datas are create
-"johnDoe", "French", cal.getTime(), null, null
+"johnDoe", "French", 1995-11-30, null, null
 "pierreTuaillon", "French", 1995-11-30, "0619797031", "M"
 
 - Lauch the application
@@ -30,7 +30,7 @@ curl -v localhost:8080/user/1
 ```
 
 ## H2 
-H2 consol is enable
+H2 console is enable
 
 localhost:8080/h2-console/
 
